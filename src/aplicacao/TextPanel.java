@@ -1,7 +1,6 @@
 package aplicacao;
 
 import java.awt.FlowLayout;
-
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 

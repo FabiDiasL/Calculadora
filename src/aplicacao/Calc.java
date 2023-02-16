@@ -23,7 +23,9 @@ public class Calc extends JFrame {
 		
 		JPanel digitosPanel = new JPanel();
 		digitosPanel.setLayout(new BorderLayout());
-		
+		digitosPanel.add(BorderLayout.CENTER, new NumerosPanel(textPanel.getTxtNumero()));
+		digitosPanel.add(BorderLayout.EAST, new OperacoesPanel(textPanel.getTxtNumero()));
+				
 		add(BorderLayout.CENTER, digitosPanel);
 		
 		setVisible(true);
