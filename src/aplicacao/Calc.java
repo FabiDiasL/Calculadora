@@ -1,8 +1,8 @@
 package aplicacao;
 
 import java.awt.BorderLayout;
-
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.UIManager;
 
 public class Calc extends JFrame {
@@ -20,6 +20,11 @@ public class Calc extends JFrame {
 		
 		TextPanel textPanel = new TextPanel();
 		add(BorderLayout.NORTH, textPanel);
+		
+		JPanel digitosPanel = new JPanel();
+		digitosPanel.setLayout(new BorderLayout());
+		
+		add(BorderLayout.CENTER, digitosPanel);
 		
 		setVisible(true);
 	}
